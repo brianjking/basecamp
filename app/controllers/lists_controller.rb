@@ -24,7 +24,7 @@ class ListsController < ApplicationController
   end
 
   def edit
-    @list = current_user.owned_projects.find(params[:id])
+    @list = current_user.owned_projects.find(params[:project_id])
   end
 
   def update
